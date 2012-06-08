@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Oxplorer</title>
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+<script type="text/javascript" src="js/objects.js"></script>
+<script type="text/javascript" src="js/index_controller.js"></script>
+</head> 
+
+<body> 
+<div data-role="page" id="main_page">
+	<div data-role="header">
+		<h1>Oxplorer</h1>
+        <a href="#somewhere" data-icon="refresh" class="ui-btn-right">Refresh</a>
+	</div>
+	<div data-role="content" id="main_page_content">
+		<div id="groups" class="place_holder"></div>
+	</div>
+	<div data-role="footer">   
+		<a href="#set_group_name" data-role="button" data-rel="dialog" data-transition="slideup">Create Group</a>
+        <a href="#add_remove_mandants_page" data-role="button" data-rel="dialog" data-transition="slideup" onClick="addRemoveMandants()">Mandant</a>
+        <a href="#main_page" data-role="button">Move WB</a>
+	</div>
+</div>
+
+<div data-role="page" id="add_remove_mandants_page">
+	<div data-role="header" data-theme="b">
+		<h1>Mandants List</h1>
+	</div>
+	<div data-role="content">
+		<div id="add_remove_mandants_list" class="place_holder"></div>
+	</div>
+</div>
+
+<div data-role="page" id="set_group_name">
+	<div data-role="header" data-theme="b">
+		<h1>Set Group Name</h1>
+	</div>
+	<div data-role="content">
+		<input type="text" id="new_group_name" value=""/>
+		<div class="ui-grid-a">
+			<span class="ui-block-a"><a href="#main_page" data-role="button" onClick="setGroupName()">OK</a></span>
+			<span class="ui-block-b"><a href="#main_page" data-role="button" data-rel="back">Cancel</a></span>
+		</div>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>Page Four</h1>
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<script>
+	main();
+
+//	localStorage.clear();
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+#main_page_content
+	{
+		margin:0px;
+		padding:0px;
+	}
+	
+/*----------- group header bar ----------*/
+.header_bar
+	{
+		padding-bottom:20px;
+		padding-top:20px;
+	}
+.toggle_button
+	{
+		position:absolute;
+		top:18%;
+	}
+.group_name
+	{
+		position:absolute;
+		left:15%;
+		top:26%;
+	}
+.edit_button
+	{
+		position:absolute;
+		left:50%;
+		top:18%;
+	}
+.down_button
+	{
+		position:absolute;
+		top:18%;
+		right:18%
+	}
+.delete_button
+	{
+		position:absolute;
+		top:18%;
+		right:5%
+	}
+	
+/*-------------------------------------------*/	
+
+/*---------- group work basket list ---------*/
+.wb_ul
+	{
+		padding-top:7px;
+		padding-bottom:7px
+	}
+.wb_id
+	{
+		position:absolute;
+		left:25%;
+	}
+.wb_unread
+	{
+		position:absolute;
+		left:82%;
+	}
+	
+/*--------------------------------------------*/
